@@ -1,12 +1,27 @@
 html{
     background-color: rgb(181, 197, 211);
 }
-body{
-    font-family: Georgia, 'Arial', Times, serif;
-    font-size: 14px;
-    background-color: lightsteelblue;
-    border: #b6afc2 1px solid;
-    text-align: justify;
-    margin: 10px auto;
-    width: 900px;
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f4f8;
+    margin: 0;
+    padding: 30px;
+}
+.contenedor {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+button{
+    display: inline-block;
+    padding: 10px 15px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    background: #4c1b99;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
 }

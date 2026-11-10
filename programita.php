@@ -6,11 +6,24 @@
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <?php
-        for($i=0; $i<50; $i++){
-            $a[$i] = rand(1, 100); // rand es por random, lo aprendí anteriormente :v
-        }
-        echo implode(", ", $a);
-    ?>
+    <div class="contenedor">
+        <button type="submit" name="mayores">Ver los tres mayores</button>
+        <?php
+            if ($_SERVER["REQUEST_METHOD"]==="POST" && isset ($_POST['mayores'])){
+                for($i=0; $i<50; $i++){
+                    $a[$i] = rand(1, 100);
+                }
+                echo implode(", ", $a);
+                // ahora del arreglo de arriba, con el boton para ver
+                // el arreglo, que muestre los tres mayores
+                for($i=0; $i<3; $i++){
+                    $m[$i] = max($a);
+                    $p = array_search($m[$i], $a);
+                    unset($a[$p]);
+                }
+                echo implode(", ", $m);
+            }
+        ?>
+    </div>
 </body>
 </html>
