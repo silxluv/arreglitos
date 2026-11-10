@@ -1,0 +1,12 @@
+html{
+    background-color: rgb(181, 197, 211);
+}
+body{
+    font-family: Georgia, 'Arial', Times, serif;
+    font-size: 14px;
+    background-color: lightsteelblue;
+    border: #b6afc2 1px solid;
+    text-align: justify;
+    margin: 10px auto;
+    width: 900px;
+}
