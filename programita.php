@@ -14,8 +14,7 @@
                     $a[$i] = rand(1, 100);
                 }
                 echo implode(", ", $a);
-                // ahora del arreglo de arriba, con el boton para ver
-                // el arreglo, que muestre los tres mayores
+                
                 for($i=0; $i<3; $i++){
                     $m[$i] = max($a);
                     $p = array_search($m[$i], $a);
